@@ -7,6 +7,7 @@
     <title>E-Commerce Shop | Comphonia</title>
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Kaushan+Script|Ubuntu:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+     <link rel="stylesheet" href="normalize.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
@@ -40,14 +41,14 @@
                     <li><i class="fab fa-twitter nav-icon"></i></li>
                 </ul>
             </div>
-            <div class="col mx-auto">
+            <div class="col mx-auto show-area">
                 <div class="item-header">congo african jogger</div>
                 <div class="item-img">
                     <img src="shoe-r.png" class="img-fit">
                 </div>
                 <div class="item-price"> $79.00 </div>
                 <div class="cartbtn">add to cart</div>
-                <div class="underlay"> JOGGER</div>
+                <div class="underlay" id="underlay"> JOGGER</div>
             </div>
             <div class="buttons">
                 <div class="nextbtn ">
@@ -63,7 +64,12 @@
 
         </div>
     </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="fittext.js"></script>
+<script>
+  $("#underlay").fitText(.2,{minFontSize: '200px', maxFontSize: '300px' });
 
+</script>
 </body>
 
 </html>
